@@ -84,7 +84,7 @@ router.get("/blogPost/:id", (req, res) => {
         ],
     })
 
-    // render blog post to single-post page
+    // render blog post to single post only page
     .then((dbBlogPostData) => {
         if (!dbBlogPostData) {
         res.status(404).json({ message: "No blog post was found with this id. Please check your id and try again." });
@@ -101,3 +101,6 @@ router.get("/blogPost/:id", (req, res) => {
         res.status(500).json(err);
     });
 });
+
+// export router
+module.exports = router;
