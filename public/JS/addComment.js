@@ -1,4 +1,4 @@
-// create an asynchronous function to add comment
+// create a function to add comment
 async function addComment(event) {
     // prevent default action
     event.preventDefault();
