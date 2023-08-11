@@ -24,12 +24,12 @@ router.get("/", (req, res) => {
                 "created_at"
             ],
             include: {
-            model: User,
+            model: Users,
             attributes: ["username"],
             },
         },
         {
-            model: User,
+            model: Users,
             attributes: ["username"],
         }
         ],
@@ -66,7 +66,7 @@ router.get("/:id", (req, res) => {
         ]
         },
         {
-            model: User,
+            model: Users,
             attributes: ["username"],
         },
         ],
