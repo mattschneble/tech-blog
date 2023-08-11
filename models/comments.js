@@ -37,7 +37,7 @@ Comments.init(
                 model: 'blogpost',
                 key: 'id'
             }
-        }
+        },
     },
 
     // configure metadata
